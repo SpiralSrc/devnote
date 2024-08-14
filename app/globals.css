@@ -36,6 +36,19 @@
   h1 {
     @apply mb-10
   }
+
+  /* Other elements */
+  form {
+    @apply w-[90%] mx-auto flex flex-col justify-center items-center p-4 rounded-lg
+  }
+
+  input {
+    @apply bg-transparent py-2 px-3 w-full placeholder:text-slate-400/40 rounded-lg ocus:border-none focus:outline-none
+  }
+
+  textarea {
+    @apply bg-transparent py-2 px-3 w-full placeholder:text-slate-400/40 rounded-lg ocus:border-none focus:outline-none
+  }
 }
 
 @layer components {
