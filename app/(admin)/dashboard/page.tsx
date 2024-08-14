@@ -2,8 +2,10 @@ import React from "react";
 
 export default function DashboardPage() {
   return (
-    <div>
-      <h1>Dashboard Page</h1>
-    </div>
+    <section>
+      <div className="wrapper">
+        <h1 className="text-center font-sacramento text-4xl">Dashboard Page</h1>
+      </div>
+    </section>
   );
 }

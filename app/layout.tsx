@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Great_Vibes, Inter, Roboto, Sacramento } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/shared/Navbar";
 
 const vibes = Great_Vibes({
   weight: "400",
@@ -37,7 +38,10 @@ export default function RootLayout({
       <body
         className={`${vibes.variable} ${sacramento.variable} ${roboto.variable}`}
       >
-        <main className="font-roboto">{children}</main>
+        <main className="font-roboto w-screen min-h-screen overflow-y-scroll">
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );

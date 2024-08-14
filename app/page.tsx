@@ -2,8 +2,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Homepage</h1>
-    </div>
+    <section>
+      <div className="wrapper">
+        <h1 className="text-center font-vibes text-4xl">Homepage</h1>
+      </div>
+    </section>
   );
 }
